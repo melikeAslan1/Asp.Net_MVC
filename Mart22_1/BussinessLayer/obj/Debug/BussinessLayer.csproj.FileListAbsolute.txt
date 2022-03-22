@@ -1,0 +1,6 @@
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\bin\Debug\BussinessLayer.dll
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\bin\Debug\BussinessLayer.pdb
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\obj\Debug\BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\obj\Debug\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\obj\Debug\BussinessLayer.dll
+C:\Users\303MELİKE_SABAH\Documents\GitHub\llk_MVC_Projem\Mart22_1\BussinessLayer\obj\Debug\BussinessLayer.pdb
