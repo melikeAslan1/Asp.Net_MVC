@@ -12,6 +12,7 @@ namespace EntityLayer.Concrete
         [Key]
         public int LessonId { get; set; }
 
+        [StringLength(10)]
         public string LessonName { get; set; }
 
         public int Grade { get; set; }
