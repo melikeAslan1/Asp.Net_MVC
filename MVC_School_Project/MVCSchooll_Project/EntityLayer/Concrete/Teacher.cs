@@ -12,10 +12,13 @@ namespace EntityLayer.Concrete
         [Key]
         public int TeacherId { get; set; }
 
+        [StringLength(15)]
         public string TeacherName { get; set; }
 
+        [StringLength(15)]
         public string TeacherSurname { get; set; }
 
+        [StringLength(10)]
         public string TeacherPhone { get; set; }
 
         public ICollection<Student> Students { get; set; }
