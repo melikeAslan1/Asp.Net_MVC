@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\MVCSchooll_Project"
+    "\\MVCSchooll_Project",
+    "\\MVCSchooll_Project\\EntityLayer",
+    "\\MVCSchooll_Project\\EntityLayer\\Concrete"
   ],
-  "SelectedNode": "\\MVCSchooll_Project\\MVCSchooll_Project.sln",
+  "SelectedNode": "\\MVCSchooll_Project\\EntityLayer\\Concrete\\Student.cs",
   "PreviewInSolutionExplorer": false
 }
