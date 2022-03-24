@@ -13,7 +13,7 @@ namespace EntityLayer.Concrete
         public int ClassroomId { get; set; }
 
         [StringLength(20)]
-        public int ClassroomName { get; set; }
+        public string ClassroomName { get; set; }
 
         public ICollection<Student> Students { get; set; }
     }
