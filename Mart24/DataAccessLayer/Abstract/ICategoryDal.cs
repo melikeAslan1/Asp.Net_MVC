@@ -7,7 +7,8 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-    interface ICategoryDal:IRepository<Category>
+    interface ICategoryDal:IRepository<Category>  // içindekileri sildim çünkü o ilk yöntemde vardı. onun yerine IRepository den deger almasını istedim.
+                                                  // yani işlemlerimi generic olarak yapıcam. bu yapının adı generic tir. 
     {
 
     }

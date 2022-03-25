@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
-    public class CategoryRepository3 : ICategoryDal3
+    public class CategoryRepository3 : ICategoryDal3  //bu yanlış yani uzun yol.
     {
         Context c = new Context();
         DbSet<Category> _object;

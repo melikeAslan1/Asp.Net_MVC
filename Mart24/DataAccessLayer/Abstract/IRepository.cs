@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Abstract
 {
-   public interface IRepository<T>    //burada metotların tanımlamasını yaptık.
+   public interface IRepository<T>    //burada metotların tanımlamasını yaptık.  //repository işlemleri için kullanacağımız temel interface.
     {
         List<T> List();
 
