@@ -7,6 +7,7 @@ using System.Web.Mvc;
 
 namespace MvcProjeUI.Controllers
 {
+    // sadece kategori işlemleri burada tutulacak. 
     public class CategoryController : Controller
     {
         // GET: Default
