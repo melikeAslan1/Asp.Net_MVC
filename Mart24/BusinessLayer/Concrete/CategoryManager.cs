@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
+    //bizim gönderdiğimiz şartların sağlanıp sağlanmadığını business layerda kontrol ederiz.
+
+    //concrete klasörüm somut adımları içerir.
    public class CategoryManager
     {
         GenericRepository<Category> repo = new GenericRepository<Category>();
