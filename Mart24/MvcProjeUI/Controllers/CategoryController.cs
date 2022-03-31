@@ -8,14 +8,14 @@ using System.Web.Mvc;
 namespace MvcProjeUI.Controllers
 {
     public class CategoryController : Controller
-    {
-        // GET: Default
+    {   // GET: Default
+        CategoryManager cm = new CategoryManager();
+       
         public ActionResult Index()
         {
             return View();
         }
 
-        CategoryManager cm = new CategoryManager();
 
         public ActionResult GetCategoryList()
         {
@@ -25,4 +25,6 @@ namespace MvcProjeUI.Controllers
 
 
     }
+
+    
 }
