@@ -4,5 +4,59 @@
     Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>Index</h2>
+<link href="~/Content/bootstrap.min.css" rel="stylesheet" />   @*presentation katmanı içinde content içinde bootstarp.min.css donsyasını alıp buraya sürükleyip bıraktım. böylece css ekledim biçimlendirdim tablo şeklinde oldu.*@
+
+<h3>MVC Kamp tablo örneği</h3>
+
+<table class="table table-bordered">
+    <tr>
+        @*table row, tr ile satır oluşturuyorum. *@
+        <th>
+            @* table heap, başlık *@
+            ID
+        </th>
+        <th>Adı</th>
+        <th>Açıklama</th>
+        <th>Durum</th>
+        <th>Güncelleme</th>
+
+    </tr>
+
+    <tr>
+        <td>1</td>     @*burada data girişi yapıcam*@
+        <td>Eğitim</td>
+        <td>Açıklama yaptık</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+    </tr>
+    <tr>
+        <td>2</td>     @*burada data girişi yapıcam*@
+        <td>Spor</td>
+        <td>Açıklama yaptık</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>Kitap</td>
+        <td>Açıklama yaptık</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>Sinema</td>
+        <td>Açıklama bekleniyor</td>
+        <td>True</td>
+        <td><button class="btn btn-success">Güncelle</button></td>
+
+    </tr>
+
+</table>
+<button class="btn btn-link">Yeni Kategori</button>
+<button class="btn btn-warning">Kategori Listesi</button>
+<button class="btn btn-danger">Kategori Açıklamaları</button>
 

@@ -1,6 +1,9 @@
 ﻿@using EntityLayer.Concrete
 @model List<Category>
 
+@*model verileri kullanabilmek için kullanabileceğim bileşenim. c# komutlarını kullanabilmem için @ koydum. Modelim değer olarak kategorinin listesini tutucak. *@
+
+
 @{
     ViewBag.Title = "GetCategoryList";
 }
@@ -19,25 +22,20 @@
 
     </tr>
 
-    @foreach(var item in Model)
+    @foreach (var item in Model)
 
-    { 
-      <tr>
+    {
+        <tr>
 
-    <td>@item.CategoryId</td>
+            <td>@item.CategoryId</td>
 
-    <td>@item.CategoryName</td>
+            <td>@item.CategoryName</td>
 
-    <td>@item.CategoryDescription</td>
+            <td>@item.CategoryDescription</td>
 
-    <td>@item.CategoryStatus</td>
-
-
-
-      </tr>
-      }
-
-
+            <td>@item.CategoryStatus</td>
+        </tr>
+    }
 
 </table>
 

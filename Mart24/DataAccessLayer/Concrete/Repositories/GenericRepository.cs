@@ -9,7 +9,10 @@ using System.Threading.Tasks;
 
 namespace DataAccessLayer.Concrete.Repositories
 {
-    public class GenericRepository<T> : IRepository<T> where T : class
+    //Generic Repository sayesinde bütün interface lerde geçerli olan mimariyi kurmuş olurum. Artık WriterRepository
+    //yada CategoryRepository tanımlamama gerek yok. amaç: kod tekrarından kurtulmak, işlemlerin daha kolay ilerlemesi,
+    // böl parçala yönet ile proje geliştirmek. Bunun daha büyüğü mikroservisler ile olan mimariler falan.
+    public class GenericRepository<T> : IRepository<T> where T : class   //Generic bütün klasörlerin tamamını kaplıyor. Burada T değerim class olacak diyorum. T yi zaten Entity olarak gönderiyoruz.
     {
         Context c = new Context();
 
@@ -40,7 +43,7 @@ namespace DataAccessLayer.Concrete.Repositories
             return _object.ToList();
         }
 
-        public List<T> List(Expression<Func<T, bool>> filter)
+        public List<T> List(Expression<Func<T, bool>> filter) //şartlı listeleme
         {
             return _object.Where(filter).ToList();
 

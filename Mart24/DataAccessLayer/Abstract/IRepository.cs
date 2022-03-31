@@ -15,7 +15,7 @@ namespace DataAccessLayer.Abstract
         void Update(T p);
         void Delete(T p);
 
-        List<T> List(Expression<Func<T, bool>>filter);  //filtreleme işlemi yapıcaz, lamda diye geçiyor. 
+        List<T> List(Expression<Func<T, bool>>filter);  //filtreleme işlemi yapıcaz, landa diye geçiyor. bu yapının adı generic.
 
 
     }
