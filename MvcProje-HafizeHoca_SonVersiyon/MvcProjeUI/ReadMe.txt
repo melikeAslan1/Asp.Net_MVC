@@ -1,0 +1,55 @@
+﻿Asp.Net(.Net Framework) C# olan app i seçelim.
+MVC(Model-View-Controller)
+
+Deneme Controller ına view eklemek için 
+Deneme Metoduna sağ tık yapıp view i seçiyoruz.
+View-Shared klasörü altında pencerede layout page i seçiyoruz 
+	<li>@Html.ActionLink("İletişim", "Contact", "Home")</li>
+	1.Tırnak-Butonun üzerine yazmak istediğim ad
+	2.Tırnak-Controller içindeki methodumun içine
+	3.Tırnak-View içindeki hangi klasörde belirtiyorum.
+
+<li>@Html.ActionLink("Deneme", "Deneme", "Home")</li>
+Deneme sayfasını  önce _layouta a yukarıdaki gibi ekledik.
+Yeni bir layout page yaptık.
+Layout Page içine diğer sayfaların hangi alanda görüntüleneceğini belirtmek için @RenderBod() kodunu kullandık.
+
+Yeni bir layout nasıl oluşturduk ? 
+Shared folder ina sağ tıklayıp view i seçtik.
+ALtta seçenekler seçili değildi
+Oluşan Layout Page a Body tagı içinde istediğimiz div içerisine  @renderBOdy() kodunu yazdık.
+
+	OLuşturlulacak Tablolar
+   1)Writer(Yazar)
+   2)Category()
+   3)Heading()
+   4)Content
+   5)About()
+   6)Contaxt()
+
+İlişki Oluşturma
+-------------
+Bire çok ilişkide bir olan tarafa Koleksion ekliyoruz.
+        public ICollection<Heading> Headings { get; set; }
+Çok tarafına bağlanılacak olan tablonun clası ve sutunu eklenir
+        public virtual Category Category { get; set; }
+
+
+EntityLayer ın içindeki referance a nuget packacge den entityframework u indirdik.(6.4.4)
+
+Migrations Ekleme İşlemi
+View -Other Windows Package Manager Console tıklıyoruz
+
+-----başka veri tabanını projeye ekleme-----
+
+Ekleyeceğimiz veritabanını backup ını alıyoruz.
+Alınan backup a server yüklemek için 
+Sql tarafında kullandığımız sql server içine girip backup dosyasını yani .bak uzantılı dosyayı koyuyoruz.
+Database in üzerine gelip sağ tık restore database diyoruz
+Device a tıkla... tıkla
+backup media add diyoruz.
+atmış olduğumuz klasör içinde olan .bak dosyasını seçiyoruz.
+dbMVCProje.bak dosyasındaki database adını web config tarafındaki initial catalog : yazan yere aynı adı yazıyoruz.
+web config save et.
+sonra add-migration edit diye oluştur
+update-database olarak güncelle Gelsin veriler  :)
