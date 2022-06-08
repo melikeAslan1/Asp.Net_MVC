@@ -1,2 +1,2 @@
 # MVC
-Asp.net MVC yapısını öğrenmeye yönelik kların olduğu repo.
+Asp.net MVC yapısını öğrenmeye yönelik kodların olduğu repo.
